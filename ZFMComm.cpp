@@ -384,7 +384,7 @@ int ZFMComm::getBytes(char* bufferHead, int bytesToRead, int bufferSize){
 		}
 		bytesToRead -= bytesRead;
 		buffer += bytesRead;
-		OSTimeDlyHMSM(0,0,0,10);
+		//OSTimeDlyHMSM(0,0,0,10);
 		//Handle failure case where we do not read all the data
 		bytesRead = read(fd, buffer, bytesToRead);
 		totalBytesRead += bytesRead;

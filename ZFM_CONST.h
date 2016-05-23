@@ -8,8 +8,9 @@
 #ifndef ZFM_CONST_H_
 #define ZFM_CONST_H_
 
-	static const char ZFM_HEADER[] = {0xEF, 0x01};
-	static const char ZFM_ADDRESS[] = {0xFF, 0xFF, 0xFF, 0xFF};
+	static const char ZFM_HEADER[] = {static_cast<const char>(0xEF), static_cast<const char>(0x01)};
+	static const char ZFM_ADDRESS[] = {static_cast<const char>(0xFF), static_cast<const char>(0xFF),
+					static_cast<const char>(0xFF), static_cast<const char>(0xFF)};
 
 	static const char ZFM_PKG_CMD = 0x01;
 	static const char ZFM_PKG_DATA = 0x02;
